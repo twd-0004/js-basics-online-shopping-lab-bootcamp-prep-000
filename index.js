@@ -46,7 +46,7 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   //var position = cart.indexOf(item);
-  for (let i = 1; i < cart.length; i++) {
+  for (let i = 0; i < cart.length; i++) {
     if (cart[i].itemName === item) {
       delete cart[i];
     }
