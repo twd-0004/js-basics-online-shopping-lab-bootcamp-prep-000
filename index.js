@@ -47,7 +47,7 @@ function removeFromCart(item) {
   // write your code here
   //var position = cart.indexOf(item);
   for (let i = 0; i < cart.length; i++) {
-    if (cart[i].itemName === item) {
+    if (getCart()[i].itemName === item) {
       delete cart[i];
     }
   }
