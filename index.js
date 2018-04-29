@@ -45,6 +45,11 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  var position = cart.indexOf(item);
+  if (position != -1) {
+    delete cart[position];
+  }
+  return cart
 }
 
 function placeOrder(cardNumber) {
